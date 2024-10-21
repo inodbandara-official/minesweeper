@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="minesweeper.css">
+</head>
+<body>
+    <h1>Minesweeper</h1>
+    <div id="controls">
+        <input type="number" id="rows" placeholder="Rows" min="5" max="20" value="10">
+        <input type="number" id="cols" placeholder="Columns" min="5" max="20" value="10">
+        <input type="number" id="mines" placeholder="Mines" min="1" max="99" value="10">
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+    <div id="game-container">
+        <div id="board"></div>
+    </div>
+    <script src="minesweeper.js"></script>
+</body>
+</html>
